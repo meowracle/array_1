@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex07</title>
+</head>
+<body>
+<script>
+    var a=[];
+    for (i=0; i<10; i++){
+        var x=prompt("nhap vao phan tu thu "+i);
+        a.push(x);
+    }
+    document.write(a+"<br/>");
+    let n=prompt("moi nhap vao 1 phan tu:");
+    for (j=0; j<10; j++) {
+        if (a[j]==n) {
+            for (k=j; k<10 ;k++) {
+                a[k] = a[k + 1];
+                a.push(0);
+            }
+        }
+    }
+    document.write(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex06</title>
+</head>
+<body>
+<script>
+    var a=[];
+    for (i=0; i<10; i++){
+        var x=prompt("nhap vao phan tu thu "+i);
+        /*var index=a.indexOf(x);
+        while (index!=-1){
+            x=parseInt(prompt("phan tu da trung, moi nhap lai: "));
+        }*/
+        a.push(x);
+    }
+    document.write(a+"<br/>");
+    let n=prompt("moi nhap vao 1 so nguyen:");
+    var viTri=a.indexOf(n);
+    if (viTri!=-1) {
+        alert(n+" is in the array");
+    } else{
+        alert(n+" is not in the array");
+    }
+</script>
+</body>
+</html>

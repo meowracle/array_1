@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex03</title>
+</head>
+<body>
+<script>
+    var a=[1,-5,8,0,44,-120,22,14,-5,-10];
+    var max=a[0];
+    var sum=0;
+    var tb;
+    for (var i=0; i<a.length; i++) {
+        sum+=a[i];
+        if (a[i]>max) {
+            max=a[i];
+        }
+    }
+    tb=sum/a.length;
+    document.write("gia tri lon nhat cua mang la: "+max+" , gia tri trung binh la: "+tb);
+</script>
+</body>
+</html>
